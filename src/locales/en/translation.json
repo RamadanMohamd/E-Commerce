@@ -1,0 +1,91 @@
+{
+  "search": "Search",
+  "account": "Account",
+  "cart": "Shopping Cart",
+  "menu": "Menu",
+  "offersBar": {
+    "message": "New season coming! Discount 10% for all product! Checkout Now!",
+    "timeLabel": "Current time"
+  },
+  "newsletter": {
+    "placeholder": "Get latest offers to your inbox",
+    "subscribe": "Subscribe"
+  },
+  "footerSections": {
+    "shop": "Shop",
+    "information": "Information",
+    "company": "Company"
+  },
+  "footerLinks": {
+    "myAccount": "My account",
+    "login": "Login",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "shippingPolicy": "Shipping Policy",
+    "returns": "Returns & Refunds",
+    "cookies": "Cookies Policy",
+    "faq": "Frequently asked",
+    "about": "About us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "contact": "Contact Us"
+  },
+  "copyright": "© John Lewis plc 2001 - 2024",
+  "products": {
+    "title": "Products",
+    "addToCart": "Add to Cart",
+    "viewDetails": "View Details",
+    "outOfStock": "Out of Stock",
+    "price": "Price",
+    "quantity": "Quantity",
+    "color": "Color",
+    "size": "Size",
+    "viewSizeChart": "View Size Chart",
+    "checkoutNow": "Checkout Now",
+    "deliveryTnC": "Delivery T&C",
+    "sold": "Sold",
+    "description": "Description",
+    "seeMore": "See More...",
+    "seeLess": "See Less...",
+    "itemsInStock": "items in stock",
+    "addedToFavorites": "Added to favorites!",
+    "linkCopied": "Link copied to clipboard!",
+    "shareCanceled": "Share canceled",
+    "relatedProduct": "Related Product",
+    "popularThisWeek": "Popular this week",
+    "viewAll": "View All"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyMessage": "Start adding items to your cart",
+    "item": "item",
+    "items": "items",
+    "reviewItems": "Review your items before checkout",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "checkout": "Checkout Now",
+    "continueShopping": "Continue Shopping",
+    "clearCart": "Clear Cart",
+    "proceedingToCheckout": "Proceeding to checkout...",
+    "addedToCart": "Added to cart successfully!"
+  },
+  "cartPage": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit"
+  }
+}

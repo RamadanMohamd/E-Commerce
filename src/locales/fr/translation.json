@@ -1,0 +1,91 @@
+{
+  "search": "Rechercher",
+  "account": "Compte",
+  "cart": "Panier",
+  "menu": "Menu",
+  "offersBar": {
+    "message": "Nouvelle saison à venir ! 10% de réduction sur tous les produits ! Commandez maintenant !",
+    "timeLabel": "Heure actuelle"
+  },
+  "newsletter": {
+    "placeholder": "Recevez les dernières offres dans votre boîte",
+    "subscribe": "S'abonner"
+  },
+  "footerSections": {
+    "shop": "Boutique",
+    "information": "Information",
+    "company": "Entreprise"
+  },
+  "footerLinks": {
+    "myAccount": "Mon compte",
+    "login": "Connexion",
+    "wishlist": "Liste de souhaits",
+    "cart": "Panier",
+    "shippingPolicy": "Politique de livraison",
+    "returns": "Retours et remboursements",
+    "cookies": "Politique des cookies",
+    "faq": "Questions fréquentes",
+    "about": "À propos",
+    "privacy": "Politique de confidentialité",
+    "terms": "Termes et conditions",
+    "contact": "Nous contacter"
+  },
+  "copyright": "© John Lewis plc 2001 - 2024",
+  "products": {
+    "relatedProduct": "Produit connexe",
+    "popularThisWeek": "Populaire cette semaine",
+    "viewAll": "Voir tout",
+    "title": "Produits",
+    "addToCart": "Ajouter au panier",
+    "viewDetails": "Voir les détails",
+    "outOfStock": "En rupture de stock",
+    "price": "Prix",
+    "quantity": "Quantité",
+    "color": "Couleur",
+    "size": "Taille",
+    "viewSizeChart": "Voir le guide des tailles",
+    "checkoutNow": "Commander maintenant",
+    "deliveryTnC": "Conditions de livraison",
+    "sold": "Vendu",
+    "description": "Description",
+    "seeMore": "Voir plus...",
+    "seeLess": "Voir moins...",
+    "itemsInStock": "articles en stock",
+    "addedToFavorites": "Ajouté aux favoris!",
+    "linkCopied": "Lien copié!",
+    "shareCanceled": "Partage annulé"
+  },
+  "cart": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "emptyMessage": "Commencez à ajouter des articles à votre panier",
+    "item": "article",
+    "items": "articles",
+    "reviewItems": "Examinez vos articles avant de passer à la caisse",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "free": "Gratuite",
+    "total": "Total",
+    "checkout": "Passer la commande",
+    "continueShopping": "Continuer les achats",
+    "clearCart": "Vider le panier",
+    "proceedingToCheckout": "Passage à la caisse...",
+    "addedToCart": "Ajouté au panier avec succès!"
+  },
+  "cartPage": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "total": "Total",
+    "checkout": "Commander",
+    "continueShopping": "Continuer vos achats"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier"
+  }
+}

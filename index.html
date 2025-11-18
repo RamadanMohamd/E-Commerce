@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="public, max-age=3600">
+    <meta http-equiv="X-DNS-Prefetch-Control" content="on">
+    <title>E-commerce Application</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Preconnect to all external domains for faster resource loading -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://api.fontshare.com">
+    
+    <!-- Preconnect to API and CDN for faster product data and images -->
+    <link rel="preconnect" href="https://api.easy-orders.net">
+    <link rel="dns-prefetch" href="https://api.easy-orders.net">
+    <link rel="preconnect" href="https://easyorders.fra1.digitaloceanspaces.com" crossorigin>
+    <link rel="dns-prefetch" href="https://easyorders.fra1.digitaloceanspaces.com">
+    
+    <!-- Preload critical LCP images with high priority -->
+    <link rel="preload" as="image" href="https://easyorders.fra1.digitaloceanspaces.com/1735836944747077894.webp" fetchpriority="high" imagesrcset="https://easyorders.fra1.digitaloceanspaces.com/1735836944747077894.webp 800w" imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px">
+    
+    <!-- Optimized font loading with display=swap and reduced weights -->
+    <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Critical CSS inline for instant rendering -->
+    <style>
+      /* Critical above-the-fold styles */
+      *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}
+      html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;font-feature-settings:normal;font-variation-settings:normal}
+      body{margin:0;font-family:inherit;line-height:inherit;background:#fff}
+      #root{min-height:100vh;display:flex;flex-direction:column}
+      .container{width:100%;margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem}
+      @media(min-width:768px){.container{padding-left:1.5rem;padding-right:1.5rem}}
+      img{display:block;max-width:100%;height:auto}
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="/src/styles/globals.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/globals.css"></noscript>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

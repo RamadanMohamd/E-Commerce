@@ -1,0 +1,49 @@
+{
+  "components": [
+    {
+      "name": "Button",
+      "path": "src/components/ui/button.tsx",
+      "description": "A customizable button component styled with Tailwind CSS and ShadCN."
+    },
+    {
+      "name": "Card",
+      "path": "src/components/ui/card.tsx",
+      "description": "A card component for displaying product information, styled with Tailwind CSS."
+    },
+    {
+      "name": "Input",
+      "path": "src/components/ui/input.tsx",
+      "description": "An input component for user input, styled with Tailwind CSS."
+    },
+    {
+      "name": "Select",
+      "path": "src/components/ui/select.tsx",
+      "description": "A select component for dropdown selections, styled with Tailwind CSS."
+    },
+    {
+      "name": "ProductCard",
+      "path": "src/components/ProductCard.tsx",
+      "description": "Displays individual product details."
+    },
+    {
+      "name": "ProductList",
+      "path": "src/components/ProductList.tsx",
+      "description": "Renders a list of ProductCard components."
+    },
+    {
+      "name": "Cart",
+      "path": "src/components/Cart.tsx",
+      "description": "Displays items in the shopping cart."
+    },
+    {
+      "name": "Header",
+      "path": "src/components/Header.tsx",
+      "description": "Contains navigation for the application."
+    },
+    {
+      "name": "Footer",
+      "path": "src/components/Footer.tsx",
+      "description": "Contains copyright and links."
+    }
+  ]
+}

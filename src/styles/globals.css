@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --color-primary: #141414;
+    --color-secondary: #383838;
+    --color-accent: #FFA439;
+    --color-background: #FFFFFF;
+    --color-surface: #F2F2F2;
+    --color-text-primary: #0B0F0E;
+    --color-text-secondary: #666666;
+    --color-text-disabled: #8F8F8F;
+    --color-border: #A3A3A3;
+    --color-error: #EF4444;
+    --color-success: #10B981;
+    --color-warning: #FFA439;
+    --color-info: #172554;
+  }
+
+  .dark {
+    /* Dark theme colors */
+    --color-primary: #F2F2F2;
+    --color-secondary: #8F8F8F;
+    --color-accent: #FFA439;
+    --color-background: #141414;
+    --color-surface: #383838;
+    --color-text-primary: #F9FAFB;
+    --color-text-secondary: #B8B8B8;
+    --color-text-disabled: #787A7C;
+    --color-border: #666666;
+    --color-error: #F87171;
+    --color-success: #34D399;
+    --color-warning: #FFA439;
+    --color-info: #172554;
+  }
+}
+
+/* Custom scrollbar styles */
+@layer utilities {
+  /* Optimize image rendering and limit max display size */
+  img {
+    max-width: 100%;
+    height: auto;
+    /* Force GPU acceleration for images */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Limit gallery images to reasonable max size */
+  .gallery-image {
+    max-width: 800px;
+    max-height: 600px;
+    /* Contain layout to prevent reflows */
+    contain: layout style paint;
+  }
+
+  /* Optimize transitions with GPU */
+  .transition-opacity {
+    will-change: opacity;
+    transform: translateZ(0);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  .scrollbar-thumb-border::-webkit-scrollbar-thumb {
+    background-color: var(--color-border);
+    border-radius: 3px;
+  }
+
+  .scrollbar-track-surface::-webkit-scrollbar-track {
+    background-color: var(--color-surface);
+    border-radius: 3px;
+  }
+}
+
+@layer base {
+  * {
+    font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  html {
+    font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+}
+
+body {
+  @apply bg-white text-gray-900;
+  font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #FFFFFF;
+  font-weight: 400;
+}
+
+a {
+  @apply hover:opacity-80;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+  font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+button {
+  @apply focus:outline-none;
+  font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+input, select, textarea {
+  @apply border-0;
+  font-family: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+/* Ring animation for cart count */
+@keyframes ring {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.2) rotate(-15deg);
+  }
+  20% {
+    transform: scale(1.2) rotate(15deg);
+  }
+  30% {
+    transform: scale(1.2) rotate(-15deg);
+  }
+  40% {
+    transform: scale(1.2) rotate(15deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-ring {
+  animation: ring 0.6s ease-in-out;
+}

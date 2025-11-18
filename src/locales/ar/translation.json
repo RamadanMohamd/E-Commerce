@@ -1,0 +1,91 @@
+{
+  "search": "بحث",
+  "account": "الحساب",
+  "cart": "عربة التسوق",
+  "menu": "القائمة",
+  "offersBar": {
+    "message": "موسم جديد قادم! خصم 10% على جميع المنتجات! اطلب الآن!",
+    "timeLabel": "الوقت الحالي"
+  },
+  "newsletter": {
+    "placeholder": "احصل على أحدث العروض في بريدك الوارد",
+    "subscribe": "اشترك"
+  },
+  "footerSections": {
+    "shop": "تسوق",
+    "information": "معلومات",
+    "company": "الشركة"
+  },
+  "footerLinks": {
+    "myAccount": "حسابي",
+    "login": "تسجيل الدخول",
+    "wishlist": "قائمة الأمنيات",
+    "cart": "العربة",
+    "shippingPolicy": "سياسة الشحن",
+    "returns": "المرتجعات والاسترداد",
+    "cookies": "سياسة الكوكيز",
+    "faq": "الأسئلة الشائعة",
+    "about": "من نحن",
+    "privacy": "سياسة الخصوصية",
+    "terms": "الشروط والأحكام",
+    "contact": "اتصل بنا"
+  },
+  "copyright": "© John Lewis plc 2001 - 2024",
+  "products": {
+    "relatedProduct": "منتجات ذات صلة",
+    "popularThisWeek": "الأكثر شعبية هذا الأسبوع",
+    "viewAll": "عرض الكل",
+    "title": "المنتجات",
+    "addToCart": "أضف إلى السلة",
+    "viewDetails": "عرض التفاصيل",
+    "outOfStock": "غير متوفر",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "color": "اللون",
+    "size": "المقاس",
+    "viewSizeChart": "عرض دليل المقاسات",
+    "checkoutNow": "إتمام الطلب الآن",
+    "deliveryTnC": "شروط التوصيل",
+    "sold": "مباع",
+    "description": "الوصف",
+    "seeMore": "عرض المزيد...",
+    "seeLess": "عرض أقل...",
+    "itemsInStock": "قطعة متوفرة",
+    "addedToFavorites": "تمت الإضافة إلى المفضلة!",
+    "linkCopied": "تم نسخ الرابط!",
+    "shareCanceled": "تم إلغاء المشاركة"
+  },
+  "cart": {
+    "title": "سلة التسوق",
+    "empty": "سلتك فارغة",
+    "emptyMessage": "ابدأ بإضافة عناصر إلى سلتك",
+    "item": "عنصر",
+    "items": "عناصر",
+    "reviewItems": "راجع عناصرك قبل إتمام الطلب",
+    "subtotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "free": "مجاني",
+    "total": "الإجمالي",
+    "checkout": "إتمام الطلب",
+    "continueShopping": "متابعة التسوق",
+    "clearCart": "إفراغ السلة",
+    "proceedingToCheckout": "جاري الانتقال إلى إتمام الطلب...",
+    "addedToCart": "تمت الإضافة إلى السلة بنجاح!"
+  },
+  "cartPage": {
+    "title": "عربة التسوق",
+    "empty": "عربة التسوق فارغة",
+    "total": "المجموع",
+    "checkout": "إتمام الطلب",
+    "continueShopping": "متابعة التسوق"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل"
+  }
+}
