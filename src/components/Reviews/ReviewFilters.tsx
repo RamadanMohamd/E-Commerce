@@ -45,9 +45,8 @@ export const ReviewFilters: React.FC<ReviewFiltersProps> = ({
 }) => {
   const [selectedRating, setSelectedRating] = useState<number | null>();
   const [selectedTopic, setSelectedTopic] = useState<string | null>();
-  const [withMedia, setWithMedia] = useState(false);
-  const [isRatingOpen, setIsRatingOpen] = useState(true);
-  const [isTopicOpen, setIsTopicOpen] = useState(true);
+  const [isRatingOpen, setIsRatingOpen] = useState(false);
+  const [isTopicOpen, setIsTopicOpen] = useState(false);
 
   const handleRatingChange = (rating: number) => {
     const newRating = selectedRating === rating ? null : rating;
@@ -59,9 +58,7 @@ export const ReviewFilters: React.FC<ReviewFiltersProps> = ({
     setSelectedTopic(newTopic);
   };
 
-  const handleMediaFilterChange = (checked: boolean) => {
-    setWithMedia(checked);
-  };
+
 
   return (
     <div className={cn('space-y-4 sticky', className)}>
@@ -122,14 +119,6 @@ export const ReviewFilters: React.FC<ReviewFiltersProps> = ({
             </div>
           </CollapsibleContent>
         </Collapsible>
-      </div>
-
-      {/* Media Filter */}
-      <div>
-        <label className="flex items-center gap-2 cursor-pointer">
-          <Checkbox checked={withMedia} onCheckedChange={handleMediaFilterChange} />
-          <span className="text-sm text-[#6b7280]">With Photo & Video</span>
-        </label>
       </div>
     </div>
   );

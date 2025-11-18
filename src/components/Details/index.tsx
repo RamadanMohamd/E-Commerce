@@ -9,6 +9,8 @@ import { useDetailsStore } from '../../store/detailsStore';
 import { useCartStore } from '../../store/cartStore';
 import SeeMore from '@/components/SeeMore';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useSettingsStore } from '@/store/settingsStore';
+import { formatPrice } from '@/lib/currency';
 
 interface DetailsProps {
   product: ProductDetailsType;
@@ -20,6 +22,7 @@ export const Details: React.FC<DetailsProps> = ({
   className = '' 
 }) => {
   const { t } = useTranslation();
+  const { currency } = useSettingsStore();
   const [quantity, setQuantity] = useState(1);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const { 
@@ -92,7 +95,7 @@ export const Details: React.FC<DetailsProps> = ({
 
   const handleCheckout = () => {
     if (selectedVariant) {
-      alert(`Proceeding to checkout!\nTotal: £${(selectedVariant.sale_price * quantity).toFixed(2)}`);
+      alert(`Proceeding to checkout!\nTotal: ${formatPrice((selectedVariant.sale_price * quantity), currency)}`);
     } else {
       alert('Please select a valid color and size combination');
     }
@@ -115,15 +118,15 @@ export const Details: React.FC<DetailsProps> = ({
             {hasVariantDiscount ? (
               <>
                 <span className="text-[18px] text-[#6b7280] line-through font-normal">
-                  £{displayOriginalPrice.toFixed(2)}
+                  {formatPrice(displayOriginalPrice, currency)}
                 </span>
                 <span className="text-[32px] font-bold text-[#1a1a1a]">
-                  £{displayPrice.toFixed(2)}
+                  {formatPrice(displayPrice, currency)}
                 </span>
               </>
             ) : (
               <span className="text-[32px] font-bold text-[#1a1a1a]">
-                £{displayPrice.toFixed(2)}
+                {formatPrice(displayPrice, currency)}
               </span>
             )}
           </div>

@@ -87,5 +87,23 @@
     "save": "حفظ",
     "delete": "حذف",
     "edit": "تعديل"
+  },
+  "reviews": {
+    "title": "تقييمات المنتج",
+    "reviewLists": "قائمة التقييمات",
+    "allReviews": "جميع التقييمات",
+    "withPhotoVideo": "مع صور وفيديو",
+    "withDescription": "مع وصف",
+    "rating": "التقييم",
+    "reviewTopics": "مواضيع التقييم",
+    "from": "من",
+    "reviews": "تقييم",
+    "star": "نجمة",
+    "productQuality": "جودة المنتج",
+    "betterService": "خدمة أفضل",
+    "productPrice": "سعر المنتج",
+    "shipment": "الشحن",
+    "matchWithDescription": "مطابقة للوصف",
+    "clearAll": "مسح الكل"
   }
 }

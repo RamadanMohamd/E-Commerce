@@ -1,4 +1,4 @@
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect, lazy, Suspense, useMemo } from 'react';
 import Gallery from '@/components/Gallery';
 import Details from '@/components/Details';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -163,6 +163,16 @@ const Home: React.FC = () => {
         setSelectedVariation
     } = useDetailsStore();
 
+    // Shuffle products for "Popular this week" section
+    const shuffledProducts = useMemo(() => {
+        const shuffled = [...mockRelatedProducts];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }, []);
+
     useEffect(() => {
         if (product) {
             setProduct(product);
@@ -288,7 +298,7 @@ const Home: React.FC = () => {
                 {/* Popular this week Section */}
                 <Suspense fallback={<div className="h-96 flex items-center justify-center"><div className="animate-pulse text-gray-400">Loading...</div></div>}>
                   <RelatedProducts
-                      products={mockRelatedProducts}
+                      products={shuffledProducts}
                       title={t('products.popularThisWeek')}
                       onViewAll={() => alert('View all popular products')}
                       onProductClick={(product) => alert(`Clicked: ${product.name}`)}

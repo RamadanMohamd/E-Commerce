@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export interface BreadcrumbItem {
   label: string;
@@ -13,6 +14,8 @@ interface BreadcrumbProps {
 }
 
 export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, className = '' }) => {
+  const { currentLanguage } = useTranslation();
+  const isRTL = currentLanguage === 'ar';
   return (
     <nav aria-label="Breadcrumb" className={cn('', className)}>
       <ol className="flex items-center gap-2 flex-wrap">
@@ -40,7 +43,13 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, className = '' })
               )}
               
               {!isLast && (
-                <ChevronRight className="w-3 h-3 md:w-4 md:h-4 text-gray-400" strokeWidth={2} />
+                <ChevronRight 
+                  className={cn(
+                    "w-3 h-3 md:w-4 md:h-4 text-gray-400",
+                    isRTL && "rotate-180"
+                  )} 
+                  strokeWidth={2} 
+                />
               )}
             </li>
           );

@@ -87,5 +87,23 @@
     "save": "Enregistrer",
     "delete": "Supprimer",
     "edit": "Modifier"
+  },
+  "reviews": {
+    "title": "Avis sur le produit",
+    "reviewLists": "Liste des avis",
+    "allReviews": "Tous les avis",
+    "withPhotoVideo": "Avec photo et vidéo",
+    "withDescription": "Avec description",
+    "rating": "Évaluation",
+    "reviewTopics": "Sujets d'avis",
+    "from": "de",
+    "reviews": "avis",
+    "star": "Étoile",
+    "productQuality": "Qualité du produit",
+    "betterService": "Meilleur service",
+    "productPrice": "Prix du produit",
+    "shipment": "Expédition",
+    "matchWithDescription": "Correspond à la description",
+    "clearAll": "Tout effacer"
   }
 }

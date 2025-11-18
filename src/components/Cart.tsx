@@ -3,9 +3,12 @@ import { useCartStore } from '@/store/cartStore';
 import { Button } from '@/components/ui/button';
 import { Trash2, Plus, Minus, ShoppingBag } from 'lucide-react';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useSettingsStore } from '@/store/settingsStore';
+import { formatPrice } from '@/lib/currency';
 
 const Cart: React.FC = () => {
     const { t } = useTranslation();
+    const { currency } = useSettingsStore();
     const { items, removeItem, updateQuantity, clearCart, getTotalPrice } = useCartStore();
 
     return (
@@ -65,14 +68,14 @@ const Cart: React.FC = () => {
                                         {/* Price and Remove */}
                                         <div className="flex items-center gap-4">
                                             <div className="text-right">
-                                                {item.price > item.salePrice && (
-                                                    <span className="text-sm text-gray-400 line-through block">
-                                                        £{item.price.toFixed(2)}
+                                                {item.salePrice && item.salePrice < item.price ? (
+                                                        <span className="text-sm text-gray-400 line-through">
+                                                        {formatPrice(item.price, currency)}
+                                                        </span>
+                                                    ) : null}
+                                                    <span className="text-lg font-semibold">
+                                                    {formatPrice(item.salePrice || item.price, currency)}
                                                     </span>
-                                                )}
-                                                <span className="font-bold text-lg">
-                                                    £{item.salePrice.toFixed(2)}
-                                                </span>
                                             </div>
                                             <Button
                                                 variant="ghost"
@@ -93,7 +96,7 @@ const Cart: React.FC = () => {
                     <div className="border-t pt-4 space-y-4">
                         <div className="flex justify-between text-xl font-bold">
                             <span>{t('cart.total')}</span>
-                            <span>£{getTotalPrice().toFixed(2)}</span>
+                            <span>{formatPrice(getTotalPrice(), currency)}</span>
                         </div>
                         
                         <div className="flex gap-4">

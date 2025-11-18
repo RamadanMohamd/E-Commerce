@@ -88,25 +88,25 @@ export const ProductReviews: React.FC<ProductReviewsProps> = ({
           <div className="flex gap-2 md:gap-4 mb-6 md:mb-8 overflow-x-auto">
             <Button
               onClick={() => setActiveTab('all')}
-              variant={activeTab === 'all' ? 'primary' : 'ghost'}
+              variant={activeTab === 'all' ? 'black' : 'ghost'}
               size="sm"
-              className={cn('px-4 md:px-6 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap')}
+              className={cn('px-4 md:px-6 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap border', activeTab === 'all' ? 'border-black' : 'border-gray-200')}
             >
               All Reviews
             </Button>
             <Button
               onClick={() => setActiveTab('withPhoto')}
-              variant={activeTab === 'withPhoto' ? 'primary' : 'ghost'}
+              variant={activeTab === 'withPhoto' ? 'black' : 'ghost'}
               size="sm"
-              className={cn('px-4 md:px-6 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap')}
+              className={cn('px-4 md:px-6 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap border', activeTab === 'withPhoto' ? 'border-black' : 'border-gray-200')}
             >
               With Photo & Video
             </Button>
             <Button
               onClick={() => setActiveTab('withDescription')}
-              variant={activeTab === 'withDescription' ? 'primary' : 'ghost'}
+              variant={activeTab === 'withDescription' ? 'black' : 'ghost'}
               size="sm"
-              className={cn('px-4 md:px-6 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap')}
+              className={cn('px-4 md:px-6 py-2 text-sm font-medium rounded-lg transition-all whitespace-nowrap border', activeTab === 'withDescription' ? 'border-black' : 'border-gray-200')}
             >
               With Description
             </Button>

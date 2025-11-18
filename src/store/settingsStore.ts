@@ -22,7 +22,7 @@ export const languages: Language[] = [
   { code: "ar", name: "العربيه", flag: "🇸🇦" },
 ];
 
-export const currencies = ["USD", "EGP", "SAR"];
+export const currencies = ["USD", "EGP"];
 
 export const useSettingsStore = create<SettingsState>()(
   persist(

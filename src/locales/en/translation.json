@@ -87,5 +87,23 @@
     "save": "Save",
     "delete": "Delete",
     "edit": "Edit"
+  },
+  "reviews": {
+    "title": "Product Reviews",
+    "reviewLists": "Review Lists",
+    "allReviews": "All Reviews",
+    "withPhotoVideo": "With Photo & Video",
+    "withDescription": "With Description",
+    "rating": "Rating",
+    "reviewTopics": "Review Topics",
+    "from": "from",
+    "reviews": "reviews",
+    "star": "Star",
+    "productQuality": "Product Quality",
+    "betterService": "Better Service",
+    "productPrice": "Product Price",
+    "shipment": "Shipment",
+    "matchWithDescription": "Match with Description",
+    "clearAll": "Clear All"
   }
 }

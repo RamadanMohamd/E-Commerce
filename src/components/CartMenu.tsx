@@ -13,6 +13,8 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { useCartStore } from '@/store/cartStore';
 import { useTranslation } from '@/hooks/useTranslation';
+import { useSettingsStore } from '@/store/settingsStore';
+import { formatPrice } from '@/lib/currency';
 
 interface CartMenuProps {
   children: React.ReactNode;
@@ -20,6 +22,7 @@ interface CartMenuProps {
 
 export const CartMenu: React.FC<CartMenuProps> = ({ children }) => {
   const { t } = useTranslation();
+  const { currency } = useSettingsStore();
   const { items, removeItem, updateQuantity, clearCart, getTotalItems, getTotalPrice } = useCartStore();
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -123,11 +126,11 @@ export const CartMenu: React.FC<CartMenuProps> = ({ children }) => {
                         <div className="text-right">
                           {item.price > item.salePrice && (
                             <span className="text-xs text-gray-400 line-through block">
-                              £{(item.price + 100 * item.quantity).toFixed(2)}
+                              {formatPrice((item.price + 100 * item.quantity), currency)}
                             </span>
                           )}
                           <span className="font-bold text-sm">
-                            £{(item.price * item.quantity).toFixed(2)}
+                            {formatPrice((item.price * item.quantity), currency)}
                           </span>
                         </div>
                         <Button
@@ -150,10 +153,10 @@ export const CartMenu: React.FC<CartMenuProps> = ({ children }) => {
           {items.length > 0 && (
             <div className="border-t pt-4 space-y-4">
               <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">{t('cart.subtotal')}</span>
-                  <span className="font-semibold">£{getTotalPrice().toFixed(2)}</span>
-                </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-gray-600">{t('cart.subtotal')}</span>
+                <span className="font-semibold">{formatPrice(getTotalPrice(), currency)}</span>
+              </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">{t('cart.shipping')}</span>
                   <span className="font-semibold">{t('cart.free')}</span>
@@ -161,7 +164,7 @@ export const CartMenu: React.FC<CartMenuProps> = ({ children }) => {
                 <Separator />
                 <div className="flex justify-between text-base font-bold">
                   <span>{t('cart.total')}</span>
-                  <span>£{getTotalPrice().toFixed(2)}</span>
+                  <span>{formatPrice(getTotalPrice(), currency)}</span>
                 </div>
               </div>
 
