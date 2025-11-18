@@ -87,6 +87,15 @@ This application includes:
 - LCP optimization (75% improvement)
 - Tree-shaking for minimal bundle size
 
+## Internationalization (i18n)
+
+The application supports **3 languages** with full RTL (Right-to-Left) support:
+- 🇬🇧 English (en)
+- 🇫🇷 French (fr)
+- 🇸🇦 Arabic (ar) - with RTL layout
+
+Language is automatically detected from browser settings or can be changed manually.
+
 ## Project Structure
 
 ```
